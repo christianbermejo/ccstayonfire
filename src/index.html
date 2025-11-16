@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stay On Fire 🔥</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-heading">ST<span class="ancient">A</span>Y <span class="ancient">O</span>N FIR<span class="ancient">E</span></h1>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="mainTab">🔥 Main</button>
+      <button class="tab-button" data-tab="storiesTab">📝 Stories</button>
+    </div>
+
+    <!-- 🔥 MAIN TAB -->
+    <div id="mainTab" class="tab-content active">
+      <p class="intro">
+        COUNTERCULTURE IS JUST THE BEGINNING OF THE WILDFIRE.<br>
+        Let’s keep spreading the fire together — one person, one story, one prayer at a time.<br>
+        Be part of reaching more people with the gospel!
+      </p>
+
+      <div class="card counters-panel">
+        <p class="people"><span id="peopleReached">0</span> people reached 🔥</p>
+        <p>🔥 Prayed for a stranger/unbeliever: <span id="prayedStranger">0</span></p>
+        <p>💬 Shared the gospel: <span id="sharedGospel">0</span></p>
+      </div>
+
+      <!-- FORM PANEL -->
+      <div class="card form-panel">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="church" placeholder="Your Church" required>
+
+        <label for="whatHappened">What happened today?</label>
+        <select id="whatHappened" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="stranger">🔥 Prayed for a stranger/unbeliever</option>
+          <option value="gospel">💬 Shared the gospel</option>
+        </select>
+
+        <button id="submitBtn" type="button">Submit 🔥</button>
+        <p id="confirmation" class="confirmation"></p>
+      </div>
+
+      <!-- SCROLLABLE ENTRIES -->
+      <div class="card entries-panel">
+        <h3>🔥 Recent Submissions</h3>
+        <div id="publicEntries" class="entries-scroll"></div>
+      </div>
+    </div>
+
+    <!-- 📝 STORIES TAB -->
+    <div id="storiesTab" class="tab-content">
+      <p class="story-intro">Share your story! 🔥 Tell us what happened when you shared the gospel or prayed for someone.</p>
+      <form id="storyForm" class="card form-panel">
+        <input type="text" id="storyName" placeholder="Your Name" required>
+        <textarea id="storyText" placeholder="Your Story..." rows="4" required></textarea>
+        <button id="submitStory" type="button">Share Story</button>
+      </form>
+
+      <div id="storyWall" class="story-wall"></div>
+    </div>
+  </div>
+
+  <!-- Admin Access -->
+  <div class="admin-floating">
+    <input type="password" id="adminPassword" placeholder="Admin password">
+    <button id="adminLogin" type="button">🔓</button>
+    <div id="adminActions" style="display:none;"></div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
