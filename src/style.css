@@ -1,7 +1,7 @@
 /* -------------------- Global -------------------- */
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('../assets/wallpaper.png');
+  background-image: url('./assets/wallpaper.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
