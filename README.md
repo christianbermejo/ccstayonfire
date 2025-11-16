@@ -10,7 +10,9 @@ Original URL: [https://codepen.io/Kim-Felizardo/pen/GgowVza](https://codepen.io/
 * Initial release
 *(Changes made by CB)*
 * Added wallpaper to `assets` for quicker loading and less prone to breaking
-* Moved Firebase configuration to use Vercel's environment variables
+* Added `favicon.ico`
+* Prepare project for use with Vercel server (`build` and `deployment`)
+* Moved Firebase configuration to use Vercel's environment variables to secure the configurations
 
 
 
